@@ -1,27 +1,6 @@
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+.App {
+  background-image: linear-gradient(to right, #1f4587, white 60%);
+  
 }
-
-.container {
-  text-align: center;
-  padding: 2rem;
-}
-
-.title {
-  font-size: 5rem;
-  font-weight: bold;
-  margin: 0;
-  line-height: 1;
-  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-@media (max-width: 768px) {
-  .title {
-    font-size: 3rem;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk');
