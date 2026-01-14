@@ -1,0 +1,93 @@
+.Footer {
+    padding: 40px 80px; 
+}
+
+.Footer h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1f4587;
+    margin-bottom: 2rem;
+}
+
+/* Form layout */
+.contact-form {
+    max-width: 1000px;
+}
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Individual field */
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #1f4587;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.03em;
+}
+
+/* Inputs */
+.form-group input {
+    padding: 0.75rem 0.9rem;
+    border-radius: 10px;
+    border: 1px solid rgba(31, 69, 135, 0.25);
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+    background-color: white;
+}
+
+/* Focus state */
+.form-group input:focus {
+    outline: none;
+    border-color: #1f4587;
+    box-shadow: 0 0 0 3px rgba(31, 69, 135, 0.15);
+}
+
+/* Placeholder */
+.form-group input::placeholder {
+    color: #999;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+
+/* Submit Button Styling */
+input[type="submit"] {
+    background-color: #1f4587;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    width: fit-content; /* Keeps it from stretching too wide */
+}
+
+/* Hover Effect */
+input[type="submit"]:hover {
+    background-color: #163262; /* A slightly darker blue */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 12px rgba(31, 69, 135, 0.2);
+}
+
+/* Click Effect */
+input[type="submit"]:active {
+    transform: translateY(0);
+}

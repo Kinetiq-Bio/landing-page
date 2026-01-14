@@ -1,0 +1,67 @@
+.wrapper {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    min-height: 100vh;       /* Makes the section full screen height */
+    padding: 40px;           /* Breathing room for mobile */
+    background-color: white; /* Or your preferred background */
+}
+.Manifesto {
+    /*background-image: linear-gradient(to left, #1f4587, white 60%);
+    */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(31, 69, 135, .1);
+    
+    /* 4. Soft styling */
+    border-radius: 200px;
+    width: 75%;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+}
+
+.Manifesto b {
+    color: #1f4587;
+}
+
+
+.title {
+    font-family: 'Space+Grotesk', sans-serif;
+    color: #1f4587;
+    font-size: clamp(2.8rem, 1vw, 6rem);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    padding: 40px 80px; 
+}
+
+
+.title2 {
+    font-size: clamp(1.4rem, 1vw, 6rem);
+    color: #1f4587;
+    padding: 20px;
+    margin-left: 80px;
+}
+
+.description {
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    
+    padding-right: 80px;
+    padding-left: 80px;
+    width: 60%
+}
+
+

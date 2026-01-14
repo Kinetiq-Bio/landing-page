@@ -8,7 +8,7 @@ function Hero() {
                 <h1 className="heading animate delay-1">KinetiQ</h1>
 
                 <p className="subtitle animate delay-2">
-                    AI-Driven Biometric Knee Brace  
+                    An AI-Driven Biometric Knee Brace  
                 </p>
 
                 <button className="button animate delay-3">
