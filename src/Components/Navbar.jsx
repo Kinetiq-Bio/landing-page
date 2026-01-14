@@ -6,7 +6,6 @@ function Navbar() {
         <nav className = 'navbar'>
             <figure className = 'figure'>
                 <img src = {logo} alt = 'Company Logo' className = 'logo'></img>
-                <figcaption className = 'caption'>KinetiQ</figcaption>
             </figure>
             <ul className = 'navLinks'>
                 <li>About</li>
