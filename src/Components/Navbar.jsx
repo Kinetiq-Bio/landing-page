@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import logo from './logo.png'
+import logo from './KinetiQ Logo.svg'
 
 function Navbar() {
     return (

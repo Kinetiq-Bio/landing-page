@@ -4,7 +4,7 @@
     align-items: center;     /* Centers vertically */
     min-height: 100vh;       /* Makes the section full screen height */
     padding: 40px;           /* Breathing room for mobile */
-    background-color: white; /* Or your preferred background */
+    background-image: white; /* Or your preferred background */
 }
 .Manifesto {
     /*background-image: linear-gradient(to left, #1f4587, white 60%);
