@@ -11,8 +11,8 @@ function Navbar() {
                 <li>About</li>
                 <li>Join us</li>
                 <li>Our Product</li>
-                <button onClick={() => {window.location.href = "https://app.kinetiq.com";}}>
-                Get Started
+                <button className = 'kq-btn-outline' onClick={() => {window.location.href = "https://app.kinetiq.com";}}>
+                Login
                 </button>
             </ul>
         </nav>
