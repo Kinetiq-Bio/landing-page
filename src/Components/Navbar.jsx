@@ -11,6 +11,9 @@ function Navbar() {
                 <li>About</li>
                 <li>Join us</li>
                 <li>Our Product</li>
+                <button onClick={() => {window.location.href = "https://app.kinetiq.com";}}>
+                Get Started
+                </button>
             </ul>
         </nav>
     );
