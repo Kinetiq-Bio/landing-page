@@ -8,6 +8,32 @@
     background-image: linear-gradient(to right, #1f4587, white 60%);
 }
 
+.kq-btn-outline {
+  background: transparent;
+  color: #1f4587;
+  font-weight: 600;
+  /* Slightly smaller font to match the image */
+  font-size: 0.85rem; 
+  /* Reduced padding: 6px top/bottom, 18px left/right */
+  padding: 6px 18px; 
+  border-radius: 999px;
+  /* 1.5px or 1px often looks cleaner for nav buttons */
+  border: 1.5px solid #1f4587; 
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+  /* Centering logic if it's a standalone element */
+  display: block;
+  margin: 0 auto;
+}
+
+.kq-btn-outline:hover {
+  background: #1f4587;
+  color: white;
+  box-shadow: 0 8px 20px rgba(31, 69, 135, 0.25);
+}
+
+
 /* LEFT SIDE */
 .logo-group {
     display: flex;
