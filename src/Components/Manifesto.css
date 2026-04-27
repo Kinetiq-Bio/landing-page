@@ -1,67 +1,54 @@
 .wrapper {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;     /* Centers vertically */
-    min-height: 100vh;       /* Makes the section full screen height */
-    padding: 40px;           /* Breathing room for mobile */
-    background-image: white; /* Or your preferred background */
-}
-.Manifesto {
-    /*background-image: linear-gradient(to left, #1f4587, white 60%);
-    */
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background: rgba(31, 69, 135, .1);
-    
-    /* 4. Soft styling */
-    border-radius: 200px;
-    width: 75%;
-    padding: 40px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+    background-color: #f8fafc;
+    padding: 120px 20px;
 }
 
-.Manifesto b {
-    color: #1f4587;
+.Manifesto {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    background: white;
+    padding: 80px;
+    border: 1px solid #e2e8f0;
+    /* Removed the 200px radius for a more professional "Card" feel */
+    border-radius: 8px; 
 }
-
 
 .title {
-    font-family: 'Space+Grotesk', sans-serif;
-    color: #1f4587;
-    font-size: clamp(2.8rem, 1vw, 6rem);
-    letter-spacing: -0.02em;
-    line-height: 1.05;
-    margin: 0;
-    display: flex;
-    align-items: flex-start;
-    padding: 40px 80px; 
-}
-
-
-.title2 {
-    font-size: clamp(1.4rem, 1vw, 6rem);
-    color: #1f4587;
-    padding: 20px;
-    margin-left: 80px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #0f172a;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 48px;
+    max-width: 800px;
 }
 
 .description {
-    flex-direction: column;
+    column-count: 1; /* Keep it focused */
     font-family: 'Inter', sans-serif;
-    color: black;
-    font-size: 1rem;
-    line-height: 1.5;
-    letter-spacing: 0.1em;
-    margin: 0;
-    display: flex;
-    align-items: flex-start;
-    
-    padding-right: 80px;
-    padding-left: 80px;
-    width: 60%
+    color: #475569;
+    font-size: 1.15rem;
+    line-height: 1.8;
 }
 
+.description p {
+    margin-bottom: 24px;
+}
 
+.description b {
+    color: #1f4587;
+    font-weight: 600;
+}
+
+.title2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    color: #1f4587;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #e2e8f0;
+    font-weight: 500;
+}

@@ -2,48 +2,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 40px;
+    padding: 30px 8%; /* Matches the Hero padding */
     width: 100%;
     box-sizing: border-box;
-    background-image: linear-gradient(to right, #1f4587, white 60%);
-}
-
-.kq-btn-outline {
-  background: transparent;
-  color: #1f4587;
-  font-weight: 600;
-  /* Slightly smaller font to match the image */
-  font-size: 0.85rem; 
-  /* Reduced padding: 6px top/bottom, 18px left/right */
-  padding: 6px 18px; 
-  border-radius: 999px;
-  /* 1.5px or 1px often looks cleaner for nav buttons */
-  border: 1.5px solid #1f4587; 
-  cursor: pointer;
-  transition: all 0.25s ease;
-  
-  /* Centering logic if it's a standalone element */
-  display: block;
-  margin: 0 auto;
-}
-
-.kq-btn-outline:hover {
-  background: #1f4587;
-  color: white;
-  box-shadow: 0 8px 20px rgba(31, 69, 135, 0.25);
-}
-
-
-/* LEFT SIDE */
-.logo-group {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    
+    /* 1. Remove the gradient and make it transparent */
+    background: transparent; 
+    
+    /* 2. Position it over the Hero */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 .logo {
-    width: 42px;
-    height: 42px;
+    width: 45px;
+    height: auto;
 }
 
 /* RIGHT SIDE */
@@ -52,31 +27,44 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 36px;
+    gap: 40px;
+    align-items: center; /* Ensures text and button align vertically */
 }
 
 .navLinks li {
-    color: black;
+    color: rgba(255, 255, 255, 0.8); /* Soft silver */
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 500;
     cursor: pointer;
-    position: relative;
     transition: color 0.2s ease;
 }
 
-/* Animation */
-.navLinks li::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    background-color: black;
-    transition: width 0.25s ease;
+.navLinks li:hover {
+    color: white;
 }
 
-.navLinks li:hover::after {
-    width: 100%;
+/* LOGIN BUTTON */
+.kq-btn-outline {
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem; 
+  padding: 8px 24px; 
+  border-radius: 4px; /* Changed to match Hero button style */
+  border: 1px solid rgba(255, 255, 255, 0.4); 
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+
+.kq-btn-outline:hover {
+  background: white;
+  color: #1f4587;
+  border-color: white;
+}
+
+/* Hide the underline animation or change it to white */
+.navLinks li::after {
+    display: none; /* Cleaner look for medical tech */
 }
